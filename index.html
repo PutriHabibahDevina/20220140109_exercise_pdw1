@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Restoran Kita</title>
+</head>
+<body>
+    <div>
+        <center> <!--Supaya header letaknya di tengah-->
+        <h1>Website Restoran Kita</h1>
+        <h2>Restoran Kita menyediakan berbagai menu masakan khas Indonesia.</h2>
+        </center>
+    </div>
+
+    <div class="container">
+        <main class="grid">
+            <article>
+                <img class="img" src="assets/batagor.jpg" alt="batagor">
+                <div class="isi">
+                    <h2>BATAGOR</h2>
+                    <p>IDR 10K</p>
+                </div>
+            </article>
+            <article>
+                <img class="img" src="assets/gorengan.jpg" alt="gorengan">
+                <div class="isi">
+                    <h2>GORENGAN</h2>
+                    <P>10K</P>
+                </div>
+            </article>
+            <article>
+                <img class="img" src="assets/bakso.jpg" alt="bakso">
+                <div class="isi">
+                    <h2>BAKSO</h2>
+                    <p>15K</p>
+                </div>
+            </article>
+            <article>
+                <img class="img" src="assets/mie goreng.jpg" alt="mie goreng">
+                <div class="isi">
+                    <h2>MIE GORENG</h2>
+                    <p>18K</p>
+                </div>
+            </article>
+        </main>
+
+        <!-- Memanggil function pada button -->
+        <button onclick="sweetAlert()" type="submit">Order</button>
+    </div>
+    <script>
+        function sweetAlert(){
+            alert("Order Berhasil!");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body{
+    background: bisque;
+}
+
+grid {
+    display: grid;
+    margin: 10px;
+    align-items: center;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom dengan lebar yang sama */
+}
+
+img{
+    width: 100%; /* Mengisi lebar kolom */
+    height: 300px;
+    object-fit: cover; /*Agar gambar terlihat normal*/
+}
+
+.grid > article{
+    box-shadow: 10px 5px 5px 0px black;
+    border-radius: 30px;
+    text-align: center;
+    background: white  ;
+}
+
+/*Agar ketika cursor mengarah ke gambar, gambarnya jadi  membesar*/
+.grid > article:hover{
+    transform: scale(1,1);
+}
